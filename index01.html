@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+	<head>
+		<title>
+			Aula 01 - JQuery Mobile
+		</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- JQuery Mobile -->
+		<link rel="stylesheet" href="./css/themes/sexta13.css" />
+		<link rel="stylesheet" href="./css/themes/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css">
+		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	<body >
+		<div data-role="page" data-theme="a" id="pg1">
+			<div data-role="header" data-theme="a">
+				<h1>Aula 01 - JQuery Mobile</h1>
+			</div>
+			<div role="main" class="ui-content" data-theme="a">
+				<h2>Corpo</h2>
+				<p>
+					Mussum Ipsum, cacilds vidis litro abertis. Delegadis gente finis, bibendum egestas augue arcu ut est.Aenean aliquam molestie leo, vitae iaculis nisl.Quem manda na minha terra sou euzis!Casamentiss faiz malandris se pirulitá.<br/>
+					Delegadis gente finis, bibendum egestas augue arcu ut est.Per aumento de cachacis, eu reclamis.Viva Forevis aptent taciti sociosqu ad litora torquent.Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+				</p>
+				
+				<ul data-role="listview" data-inset="true" data-filter="true" data-theme="a">
+					<li><a href="#">Item 01</a></li>
+					<li><a href="#">Item 02</a></li>
+					<li><a href="#">Item 03</a></li>
+					<li><a href="#">Item 04</a></li>
+					<li><a href="#">Item 05</a></li>
+				</ul>
+				
+				<form>
+					<label for="slider01">Input Slider:</label>
+					<input type="range" name="slider" id="slider01" value="25" min="0" max="100" />
+				</form>
+				
+				<a href="#" data-role="button" data-icon="star" data-theme="a">Botão Star</a>
+				<br/>
+				<a href="#pg2" class="ui-btn ui-shadow ui-corner-all">Página 2</a>
+				<br/>
+				<a href="#modalis" class="ui-btn ui-shadow ui-corner-all" data-rel="dialog" data-transition="pop"> Pop-up/Modal</a>
+			</div>
+			<div data-role="footer" data-theme="b">
+				<span>&copy;</span>Todos os direitos reseervados. Prof. Jair Feraz
+			</div>
+		</div>
+		<!-- Inicio da página 2 -->
+		<div data-role="page" data-theme="b" id="pg2">
+			<div data-role="header">
+				<h1>Página 2 - Teste Multipages in Single Page</h1>
+			</div>
+			<div role="main" class="ui-content" data-theme="b">
+				<h2>É nóis na paradis novamentis</h2>
+				<p>
+					<b>Mussum Ipsum</b>, cacilds vidis litro abertis. Delegadis gente finis, bibendum egestas augue arcu ut est.Aenean aliquam molestie leo, vitae iaculis nisl.Quem manda na minha terra sou euzis!Casamentiss faiz malandris se pirulitá.
+				</p>
+				<a href="#pg1" class="ui-btn ui-shadow ui-corner-all">Voltar</a>
+			</div>
+			<div data-role="footer" data-theme="b">
+				<h4>Página id2</h4>
+			</div>
+		</div>
+		<!-- Inicio do Modal -->
+		<div data-role="page" data-theme="c" id="modalis" data-dialog="true" >
+			<div data-role="header" data-theme="c">
+				<h2>Modalis da paradis do saitis, kkk</h2>
+			</div>
+			<div data-role="main" class="ui-content" data-theme="c">
+				<h3>Modal</h3>
+				<p>Teste de implementação de modal com <b>JQueryMobile</b>.</p>
+				<a href="#pg1" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-icon-back ui-btn-icon-left"> Voltar para pág. 1</a>
+			</div>
+			<div data-role="footer" data-theme="c">
+				<h4>Rodapé do modalis</h4>
+			</div>
+		</div>
+	</body>
+</html>
